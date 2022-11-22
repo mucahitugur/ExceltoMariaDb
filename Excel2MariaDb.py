@@ -29,7 +29,7 @@ for i in range(0,boyut):
     column2 = data.loc[i][Y]
     column3 = data.loc[i][Z]
 
-    cur.execute("insert into assets (`db_column1`,`db_column2`,`db_column3`) values (%s,%s,%s)",(name,gizlilik,butunluk,erisilebilirlik))
+    cur.execute("insert into assets (`db_column1`,`db_column2`,`db_column3`) values (%s,%s,%s)",(column1,column2,column3))
 
 
 dbconn.commit()
